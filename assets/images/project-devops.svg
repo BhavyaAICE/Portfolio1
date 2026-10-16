@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="devBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="60%" stop-color="#0d1527"/>
+      <stop offset="100%" stop-color="#080c16"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="meshGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#devBgGrad)"/>
+
+  <!-- Code / Terminal Window Box -->
+  <rect x="70" y="50" width="1140" height="620" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="70" y="50" width="1140" height="48" rx="14" fill="#131d35"/>
+  <circle cx="102" cy="74" r="6" fill="#f43f5e"/>
+  <circle cx="122" cy="74" r="6" fill="#fbbf24"/>
+  <circle cx="142" cy="74" r="6" fill="#34d399"/>
+  <text x="180" y="78" fill="#94a3b8" font-family="monospace" font-size="13">cloud-mesh-cluster-v2 [us-east-1] • kubernetes 1.30</text>
+
+  <!-- Left Stats Sidebar -->
+  <rect x="70" y="98" width="280" height="572" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+  
+  <text x="96" y="140" fill="#64748b" font-family="sans-serif" font-weight="700" font-size="11" letter-spacing="1">CLUSTER OVERVIEW</text>
+  
+  <!-- Stat 1 -->
+  <rect x="96" y="160" width="228" height="70" rx="8" fill="#131c31" stroke="#22304d" stroke-width="1"/>
+  <text x="114" y="188" fill="#94a3b8" font-family="sans-serif" font-size="12">Global Health Score</text>
+  <text x="114" y="216" fill="#10b981" font-family="sans-serif" font-weight="700" font-size="20">99.98%</text>
+  <circle cx="295" cy="195" r="5" fill="#10b981"/>
+
+  <!-- Stat 2 -->
+  <rect x="96" y="244" width="228" height="70" rx="8" fill="#131c31" stroke="#22304d" stroke-width="1"/>
+  <text x="114" y="272" fill="#94a3b8" font-family="sans-serif" font-size="12">Active Microservices</text>
+  <text x="114" y="300" fill="#38bdf8" font-family="sans-serif" font-weight="700" font-size="20">48 Pods</text>
+
+  <!-- Stat 3 -->
+  <rect x="96" y="328" width="228" height="70" rx="8" fill="#131c31" stroke="#22304d" stroke-width="1"/>
+  <text x="114" y="356" fill="#94a3b8" font-family="sans-serif" font-size="12">Throughput (Req/s)</text>
+  <text x="114" y="384" fill="#c084fc" font-family="sans-serif" font-weight="700" font-size="20">84,200</text>
+
+  <!-- Live Deployment Pipeline Stages -->
+  <text x="390" y="140" fill="#cbd5e1" font-family="sans-serif" font-weight="700" font-size="18">CI/CD Automated GitOps Pipeline</text>
+  <text x="390" y="165" fill="#64748b" font-family="sans-serif" font-size="13">Pipeline #4819 triggered by commit: <tspan fill="#38bdf8" font-family="monospace">feat(core): optimize vector retrieval</tspan></text>
+
+  <!-- Pipeline Step 1 -->
+  <g transform="translate(390, 190)">
+    <rect width="170" height="90" rx="10" fill="#131d33" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="28" cy="30" r="10" fill="#10b981" opacity="0.2"/>
+    <text x="28" y="34" fill="#10b981" font-family="sans-serif" font-size="11" text-anchor="middle">✓</text>
+    <text x="50" y="34" fill="#f8fafc" font-family="sans-serif" font-weight="600" font-size="13">Lint &amp; Test</text>
+    <text x="20" y="65" fill="#64748b" font-family="monospace" font-size="11">418 passed in 14s</text>
+  </g>
+
+  <line x1="560" y1="235" x2="600" y2="235" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Pipeline Step 2 -->
+  <g transform="translate(600, 190)">
+    <rect width="170" height="90" rx="10" fill="#131d33" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="28" cy="30" r="10" fill="#10b981" opacity="0.2"/>
+    <text x="28" y="34" fill="#10b981" font-family="sans-serif" font-size="11" text-anchor="middle">✓</text>
+    <text x="50" y="34" fill="#f8fafc" font-family="sans-serif" font-weight="600" font-size="13">Docker Build</text>
+    <text x="20" y="65" fill="#64748b" font-family="monospace" font-size="11">arm64/amd64 multi</text>
+  </g>
+
+  <line x1="770" y1="235" x2="810" y2="235" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Pipeline Step 3 -->
+  <g transform="translate(810, 190)">
+    <rect width="170" height="90" rx="10" fill="#131d33" stroke="#06b6d4" stroke-width="1.5"/>
+    <circle cx="28" cy="30" r="10" fill="#06b6d4" opacity="0.2"/>
+    <text x="28" y="34" fill="#06b6d4" font-family="sans-serif" font-size="11" text-anchor="middle">⚡</text>
+    <text x="50" y="34" fill="#f8fafc" font-family="sans-serif" font-weight="600" font-size="13">Canary Deploy</text>
+    <text x="20" y="65" fill="#38bdf8" font-family="monospace" font-size="11">25% traffic • Staging</text>
+  </g>
+
+  <line x1="980" y1="235" x2="1020" y2="235" stroke="#475569" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Pipeline Step 4 -->
+  <g transform="translate(1020, 190)">
+    <rect width="160" height="90" rx="10" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="28" cy="30" r="10" fill="#334155"/>
+    <text x="28" y="34" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">○</text>
+    <text x="50" y="34" fill="#94a3b8" font-family="sans-serif" font-weight="600" font-size="13">Prod Release</text>
+    <text x="20" y="65" fill="#64748b" font-family="monospace" font-size="11">Awaiting Gate</text>
+  </g>
+
+  <!-- Live Terminal Logs Section -->
+  <rect x="390" y="315" width="790" height="325" rx="10" fill="#070c18" stroke="#1e293b" stroke-width="1"/>
+  
+  <text x="415" y="350" fill="#38bdf8" font-family="monospace" font-size="12">$ kubectl get pods -n production --sort-by=.status.startTime</text>
+  
+  <text x="415" y="385" fill="#64748b" font-family="monospace" font-size="12">NAME                                READY   STATUS    RESTARTS   AGE</text>
+  <text x="415" y="415" fill="#a7f3d0" font-family="monospace" font-size="12">api-gateway-7b94cf96bb-x8k2p        2/2     Running   0          4d12h</text>
+  <text x="415" y="445" fill="#a7f3d0" font-family="monospace" font-size="12">auth-service-58dc89cb9f-2m8qw       1/1     Running   0          4d12h</text>
+  <text x="415" y="475" fill="#a7f3d0" font-family="monospace" font-size="12">vector-engine-c8491bfdc-lzx90       1/1     Running   0          18m</text>
+  <text x="415" y="505" fill="#a7f3d0" font-family="monospace" font-size="12">payment-worker-6789b7cf5-8vklq      1/1     Running   0          3d4h</text>
+  
+  <text x="415" y="550" fill="#34d399" font-family="monospace" font-size="12">[INFO] Telemetry health checks passed. Zero drop rate detected on ingress.</text>
+  <text x="415" y="580" fill="#e2e8f0" font-family="monospace" font-size="12"><tspan fill="#38bdf8">root@mesh-control:~#</tspan> <tspan fill="#ec4899">terraform</tspan> apply -auto-approve <tspan fill="#64748b"># All infrastructure up to date</tspan></text>
+  <rect x="880" y="568" width="8" height="15" fill="#38bdf8"/>
+</svg>

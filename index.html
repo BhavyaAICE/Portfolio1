@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Bhavy Patel | Full-Stack Developer &amp; Software Engineer</title>
+  <meta name="description" content="Portfolio of Bhavy Patel - Full-Stack Developer specializing in high-performance web applications, scalable backend systems, and modern interactive user interfaces.">
+  <meta name="keywords" content="Bhavy, Portfolio, Full-Stack Developer, Web Developer, HTML, CSS, JavaScript, Frontend, Backend, Node.js">
+  <meta name="author" content="Bhavy Patel">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bhavy Patel | Full-Stack Developer Portfolio">
+  <meta property="og:description" content="Explore selected projects, tech capabilities, and engineering case studies by Bhavy Patel.">
+  <meta property="og:image" content="assets/images/project-analytics.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Dynamic Interactive Mouse Spotlight (Desktop) -->
+  <div class="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Ambient Background Glow Blobs -->
+  <div class="ambient-glow-blob glow-purple" style="top: 80px; left: -100px; width: 500px; height: 500px;" aria-hidden="true"></div>
+  <div class="ambient-glow-blob glow-cyan" style="top: 450px; right: -120px; width: 550px; height: 550px;" aria-hidden="true"></div>
+  <div class="ambient-glow-blob glow-emerald" style="top: 1400px; left: 10%; width: 450px; height: 450px;" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       SITE HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-brand" id="brandLogo" aria-label="Bhavy Patel Home">
+        <span class="brand-dot"></span>
+        <span>Bhavy</span>
+        <span class="brand-code">.dev</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <!-- Theme Switcher Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme mode" title="Toggle theme (Press T)">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a href="#" class="btn btn-secondary btn-sm btn-download-resume" id="headerResumeBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for new opportunities &amp; freelance</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Bhavy Patel</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span>Engineering modern web applications as a&nbsp;</span>
+            <span class="typed-text" id="typedTarget"></span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            I craft ultra-responsive frontends, robust full-stack architectures, and performant web systems with clean code, modern UX aesthetics, and cloud-native scalability.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-shimmer" id="heroProjectsBtn">
+              <span>Explore Selected Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
+              <span>Let's Talk</span>
+            </a>
+            <a href="#" class="btn btn-secondary btn-download-resume" id="heroCvBtn" title="Download CV">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links" aria-label="Social Profiles">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter / X" aria-label="Twitter Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="mailto:bhavy.dev@example.com" class="social-link" title="Email Direct" aria-label="Send Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual-wrapper">
+          <div class="profile-card-container">
+            <div class="avatar-backdrop-glow"></div>
+            
+            <!-- Floating Badge Top Right -->
+            <div class="hero-floating-badge badge-top-right floating-badge">
+              <div class="badge-icon badge-icon-cyan">⚡</div>
+              <div>
+                <div class="badge-text-title">Performance</div>
+                <div class="badge-text-val">99.9% Uptime</div>
+              </div>
+            </div>
+
+            <!-- Profile Avatar Frame -->
+            <div class="profile-avatar-frame">
+              <img src="assets/images/avatar.jpg" alt="Bhavy Patel Portrait" class="profile-avatar-img">
+            </div>
+
+            <!-- Floating Badge Bottom Left -->
+            <div class="hero-floating-badge badge-bottom-left floating-badge-alt">
+              <div class="badge-icon badge-icon-violet">🚀</div>
+              <div>
+                <div class="badge-text-title">Specialization</div>
+                <div class="badge-text-val">Full-Stack &amp; Cloud</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT SECTION & STATS
+         ====================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by clean code, high performance, and impactful products</h2>
+          <p class="section-subtitle">Bridging the gap between creative frontend interfaces and robust backend distributed systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio & Core Principles -->
+          <div>
+            <p class="about-bio">
+              Hello! I'm <strong>Bhavy Patel</strong>, a passionate software developer based with a background in building complex, customer-facing web applications. I focus on writing maintainable, type-safe code that scales gracefully across devices and workloads.
+            </p>
+            <p class="about-bio">
+              Over the past few years, I've designed interactive user interfaces, engineered real-time telemetry dashboards, and orchestrated CI/CD cloud pipelines. My goal is always to deliver blazing-fast software with an extraordinary user experience.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Solid Architecture</h3>
+                <p class="pillar-desc">Modular, scalable micro-services and decoupled frontends built for team velocity.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Speed &amp; Performance</h3>
+                <p class="pillar-desc">Sub-second response latencies, optimized bundle sizes, and 60 FPS fluid rendering.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Refined UX Aesthetics</h3>
+                <p class="pillar-desc">Intuitive, accessible, and delightful interactions with seamless micro-animations.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Reliability First</h3>
+                <p class="pillar-desc">Comprehensive test coverage, zero-downtime deployments, and telemetry observability.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Animated Metrics Grid -->
+          <div class="stats-grid" id="statsSection">
+            <div class="stat-card">
+              <div class="stat-number" data-target="3" data-suffix="+">0+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="24" data-suffix="+">0+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="99.9" data-suffix="%">0%</div>
+              <div class="stat-label">System Uptime Mentality</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="15" data-suffix="+">0+</div>
+              <div class="stat-label">Happy Collaborators</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SKILLS & CAPABILITIES
+         ====================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Technologies &amp; Tools I Master</h2>
+          <p class="section-subtitle">A curated set of technologies I use daily to turn ambitious ideas into robust, production-ready software.</p>
+        </div>
+
+        <!-- Filter tabs for skills -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skills Category Filter">
+          <button class="filter-btn skill-filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn skill-filter-btn" data-filter="frontend">Frontend &amp; UI</button>
+          <button class="filter-btn skill-filter-btn" data-filter="backend">Backend &amp; DB</button>
+          <button class="filter-btn skill-filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
+          <button class="filter-btn skill-filter-btn" data-filter="tools">Systems &amp; Tools</button>
+        </div>
+
+        <!-- Dynamic skills grid -->
+        <div class="skills-grid" id="skillsGridContainer">
+          <!-- Dynamically populated by js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FEATURED PROJECTS
+         ====================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Selected Engineering Projects</h2>
+          <p class="section-subtitle">Real-world production architectures, open-source utilities, and interactive web experiences.</p>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="projects-filter-bar" role="tablist" aria-label="Project Category Filter">
+          <button class="filter-btn project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn project-filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn project-filter-btn" data-filter="ai-data">AI &amp; Data</button>
+          <button class="filter-btn project-filter-btn" data-filter="tools">Cloud &amp; Tools</button>
+        </div>
+
+        <!-- Projects Cards Container -->
+        <div class="projects-grid" id="projectsContainer">
+          <!-- Populated dynamically from js/projects-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EXPERIENCE & EDUCATION TIMELINE
+         ====================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trajectory</span>
+          <h2 class="section-title">Experience &amp; Milestones</h2>
+          <p class="section-subtitle">My professional journey building distributed systems and high-engagement web products.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Lead Full-Stack Architect</h3>
+                <span class="timeline-date">2024 — Present</span>
+              </div>
+              <div class="timeline-company">Nexus AI Technologies • Full-time</div>
+              <ul class="timeline-points">
+                <li>Architected real-time WebSocket telemetry engine handling 250,000+ daily predictive model events with zero dropped frames.</li>
+                <li>Led frontend optimization overhaul, slashing First Contentful Paint by 42% and boosting client satisfaction score to 98%.</li>
+                <li>Mentored junior engineers and instituted automated end-to-end testing pipelines across multiple development pods.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Software Engineer</h3>
+                <span class="timeline-date">2022 — 2024</span>
+              </div>
+              <div class="timeline-company">Velocity Digital Labs • Fintech Pod</div>
+              <ul class="timeline-points">
+                <li>Engineered low-latency cryptocurrency order book interface utilizing HTML5 Canvas and binary WebSockets.</li>
+                <li>Designed RESTful authentication services and rate-limited microservices backed by Redis and PostgreSQL.</li>
+                <li>Collaborated closely with product designers to implement responsive, pixel-perfect dark-mode financial components.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">HTML5 Canvas</span>
+                <span class="tech-tag">Tailored CSS</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">B.Tech in Computer Science &amp; Engineering</h3>
+                <span class="timeline-date">2018 — 2022</span>
+              </div>
+              <div class="timeline-company">University Institute of Engineering &amp; Technology</div>
+              <ul class="timeline-points">
+                <li>Graduated with First Class Honors; specialized in Distributed Computing, Data Structures, and Database Management.</li>
+                <li>Published undergraduate research paper on efficient web cache eviction algorithms and graph representations.</li>
+                <li>Head of University Open-Source Club: organized 3 hackathons and mentored 100+ students in web development.</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Algorithms</span>
+                <span class="tech-tag">Networking</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TESTIMONIALS / ENDORSEMENTS
+         ====================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">Endorsements &amp; Collaborations</h2>
+          <p class="section-subtitle">What leaders and peers have to say about collaborating with me.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="stars-rating" aria-label="5 stars rating">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Bhavy is a rare breed of developer who possesses an uncanny eye for design aesthetics while retaining the technical rigor of an enterprise systems architect. He delivered our analytics engine ahead of schedule."
+              </p>
+            </div>
+            <div class="testimonial-author-wrapper">
+              <div class="author-avatar-initials">AR</div>
+              <div>
+                <div class="author-name">Alex Rivera</div>
+                <div class="author-title">VP of Engineering at Nexus AI</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="stars-rating" aria-label="5 stars rating">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Working alongside Bhavy at Velocity was transformative. His ability to build zero-dependency vanilla JS canvas charts that run buttery smooth at 60 FPS blew away our entire product group."
+              </p>
+            </div>
+            <div class="testimonial-author-wrapper">
+              <div class="author-avatar-initials">SL</div>
+              <div>
+                <div class="author-name">Sarah Lin</div>
+                <div class="author-title">Principal Product Designer</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="stars-rating" aria-label="5 stars rating">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Bhavy's dedication to code clarity, rapid debugging, and seamless communication made him an indispensable asset. Any team would be lucky to have him onboard."
+              </p>
+            </div>
+            <div class="testimonial-author-wrapper">
+              <div class="author-avatar-initials">MK</div>
+              <div>
+                <div class="author-name">Marcus Krause</div>
+                <div class="author-title">DevOps &amp; Infrastructure Lead</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION & INTERACTIVE FORM
+         ====================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Start a Conversation</h2>
+          <p class="section-subtitle">Whether you have an upcoming project, an engineering opening, or just want to discuss tech, I'm just a message away.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Card -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Contact Channels</h3>
+            <p class="contact-info-desc">
+              I am currently open to full-time engineering roles, high-impact consulting, and open-source collaborations.
+            </p>
+
+            <!-- One-Click Copy Email Box -->
+            <div class="copy-email-box">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Direct Email</div>
+                <span class="copy-email-text" id="contactEmailText">bhavy.dev@example.com</span>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" title="Copy email address to clipboard">
+                Copy Email
+              </button>
+            </div>
+
+            <div class="contact-methods-list">
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Location &amp; Work Mode</div>
+                  <div class="contact-method-value">Global Remote / Hybrid</div>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Time Zone &amp; Availability</div>
+                  <div class="contact-method-value">IST (GMT+5:30) • Rapid response</div>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-method-label">Current Status</div>
+                  <div class="contact-method-value" style="color: var(--accent-emerald);">🟢 Open for inquiries</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Form Panel -->
+          <div class="contact-form-panel">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Full Name *</label>
+                <input type="text" id="senderName" name="senderName" class="form-input" placeholder="e.g. Elena Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email Address *</label>
+                <input type="email" id="senderEmail" name="senderEmail" class="form-input" placeholder="e.g. elena@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subject / Purpose</label>
+                <input type="text" id="senderSubject" name="senderSubject" class="form-input" placeholder="e.g. Full-Stack Role / Project Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Your Message *</label>
+                <textarea id="senderMessage" name="senderMessage" class="form-textarea" placeholder="Tell me a bit about your idea, timeline, or scope..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-shimmer" style="width: 100%;" id="submitFormBtn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback-msg" id="formFeedback">
+                ✓ Thank you! Your message has been dispatched. I'll get back to you shortly.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       SITE FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand-wrap">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-dot"></span>
+            <span>Bhavy</span>
+            <span class="brand-code">.dev</span>
+          </a>
+          <p class="footer-tagline">Engineered with precision, built for performance.</p>
+        </div>
+
+        <div class="tech-stack-pill-group">
+          <span style="font-size: 0.8rem; color: var(--text-muted); margin-right: 4px;">Tech Stack:</span>
+          <span class="tech-badge-mini">HTML5</span>
+          <span class="tech-badge-mini">CSS3</span>
+          <span class="tech-badge-mini">JavaScript (ES6+)</span>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:bhavy.dev@example.com" class="social-link" title="Email Direct" aria-label="Send Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bhavy Patel. All rights reserved.</p>
+        <p>Zero external JS dependencies • 100% Client-Side Pure Vanilla Stack</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       INTERACTIVE CASE STUDY MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study Details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-body" id="projectModalBody">
+        <!-- Rendered dynamically via js/main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       BACK TO TOP FLOATING BUTTON
+       ======================================================================== -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ========================================================================
+       SCRIPTS
+       ======================================================================== -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
